@@ -41,7 +41,7 @@ jekyll-archives:
     tag: '/tag/:name/'
 
 # Disqus comments
-# disqus_shortname: bencentra
+disqus_shortname: larryjung
 
 # Google analytics
 # ga_tracking_id: "UA-XXXX-1"
@@ -196,3 +196,9 @@ protocols:
     os_repo: "https://github.com/bencentra/centrarium.com"
     os_rcs_type: "git"
     os_src: "git@github.com:bencentra/centrarium.com.git"
+
+---
+layout: default
+comments: true
+# other options
+---
