@@ -73,7 +73,7 @@ social:
   - name: Twitter
     icon: twitter
     username: TheBenCentra
-    url: https://twitter.com/TheBenCentra
+    url: 
     desc: Follow me on Twitter
     share: true
 
@@ -86,7 +86,7 @@ social:
 
   - name: GitHub
     icon: github
-    username: bencentra
+    username: larryjung
     url: https://github.com/larryjung
     desc: Fork me on GitHub
     share: false
@@ -128,10 +128,10 @@ social:
 
   - name: SoundCloud
     icon: soundcloud
-    username:
-    url:
+    username: Ya. Chae
+    url: https://soundcloud.com/upm
     desc: Follow me on SoundCloud
-    share: false
+    share: true
 
   - name: Tumblr
     icon: tumblr
