@@ -9,7 +9,7 @@ categories: JPA
 # JPA 엔티티 생명주기 중 하나인 준영속(detached) 상태에 대해 이야기해보고자 한다.   
 
 ## 엔티티매니저가 관리하는 엔티티 상태는 아래와 같이 4가지 상태로 나뉜다.  
-![1](/assets/images/180818_jpa_detached/1.png)  
+![1](/assets/img/180818_jpa_detached/1.png)  
 
 ## Detached(준영속) 상태란 한번 영속화 된 엔티티 즉, id값을 가지고 있지만 영속성 컨텍스트를 벗어난 상태를 말한다.  
 
@@ -83,6 +83,7 @@ public class Account {
 ### 지연로딩이 발생하는 상황을 좀 더 살펴보자.  
 
 1. 컨트롤러나 뷰 단에서 자식 객체들 접근  
+
 ```java
 @RestController
 public class AccountController {
@@ -98,10 +99,12 @@ public class AccountController {
 ...
 
 }
-```
+
+```  
 
 
-2. 테스트 할 때
+2. 테스트 할 때  
+
 ```java
 
 @Test
