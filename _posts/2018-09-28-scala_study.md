@@ -24,7 +24,7 @@ categories: Scala
 [HAMA블로그 스칼라 강좌](http://hamait.tistory.com/554?category=79134) : OKKY에서 활발히 활동하고 계신 하마님의 블로그 강좌입니다.  
 
 ### - 자료  
-[자바 프로그래머를 위한 스칼라 튜토리얼](https://docs.scala-lang.org/ko/tutorials/scala-for-java-programmers.html#%ED%8A%B8%EB%A0%88%EC%9E%87%EC%97%90-%EB%8C%80%ED%95%98%EC%97%AC) : 스칼라 공식 홈페이지에 있는 문서로서 자바 프로그래머들에게 스칼라를 소개할 수 있는 자료입니다.
+[자바 프로그래머를 위한 스칼라 튜토리얼](https://docs.scala-lang.org/ko/tutorials/scala-for-java-programmers.html#%ED%8A%B8%EB%A0%88%EC%9E%87%EC%97%90-%EB%8C%80%ED%95%98%EC%97%AC) : 스칼라 공식 홈페이지에 있는 문서로서 자바 프로그래머들에게 스칼라를 소개할 수 있는 자료입니다.  
 [스칼라 학교](http://twitter.github.io/scala_school/ko/index.html) : 트위터 내부적으로 스칼라 강의를 위해 사용된 자료입니다. 스칼라 주요 문법에 관해 간략히 살펴볼 수 있습니다.   
 [Scala By Example](https://www.scala-lang.org/docu/files/ScalaByExample.pdf) : 마틴 오더스키의 자료인데, 예제 코드들을 보며 스칼라 활용에 대해 공부할 수 있습니다.  
 [Scala Style Guide](http://www.codecommit.com/scala-style-guide.pdf) : 스칼라 스타일 가이드입니다.  
