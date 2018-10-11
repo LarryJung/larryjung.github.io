@@ -54,12 +54,12 @@ public Optional<Integer> optionalAdd(Optional<Integer> val1, Optional<Integer> v
 }
 ```
 
----
+<blockquote>
+
 1 — Bear with me with the weird indentation, it’s for didactical purposes. I will present an alternative later in this post.  
 2 — The flatMap method receives a Function. We’ll call this function the “__mapper__” function.  
- 
-----
 
+</blockquote>
 
 어떻게 value의 present, empty 여부를 체크하지 않아도 됐는지 알아야 한다. Optional모나드는 flatMap 메소드를 통해서 적절하게 감싸진 내부 파라미터를 꺼내준다. 첫 째의 Optional이 empty일 경우에는 두 번 째 Optional의 flatMap을 실행하지 않는다. 사실, Optional 조합 연산(composition) 안에 하나의 empty라도 있으면 결과는 empty Optional이다.  
 
