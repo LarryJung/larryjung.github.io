@@ -16,8 +16,10 @@ __abstract__ : 모나드는 간단하지만 강력한, 코드의 구조를 개�
 - flatMap(a.k.a bind) 와 unit(a.k.a identity, return, Optional.of(), etc...). 메소드가 구현되어 있다.  
 - 다음의 세 가지 법칙을 만족한다: 좌항등원, 우항등원이 존재하고, 결합법칙을 만족한다(본 포스트의 수준을 벗어나지만)  
 
-> 용어 정리를 위해서, Optional<String> 과 같은 parameterised type 은 타입 파라미터를 갖는다고 하자: String과 Wrapper type: 이 경우에는 "___String 타입이 Optional context에 의해 감싸져(wrapped)있다.___"  
+```
+용어 정리를 위해서, Optional<String> 과 같은 parameterised type 은 타입 파라미터를 갖는다고 하자: String과 Wrapper type: 이 경우에는 " ___String 타입이 Optional context에 의해 감싸져(wrapped)있다.___ "  
 
+```
 ### How are monads useful?  
 모나드는 모든 parameterised type들의 조합(구성, composition)에 대한 것이다. Optional모나드를 예로 들자. 우리는 파라미터를 적절히 다룰 수 있으려면 Optional 이 empty인지 아닌지에 대한 확인이 필요하단 것을 알고 있다. 또한 Empty일 특정 조치를 취하는 것도 좋은 행위이다. 이제 전반적인 프로세스에 대해 "Optional을 사용하는 환경으로부터 파라미터를 unwrapping하는 것"이라고 부를 것이다.  
 
@@ -51,9 +53,11 @@ public Optional<Integer> optionalAdd(Optional<Integer> val1, Optional<Integer> v
 }
 ```
 
-> 1 — 
+```
+1 — 
 Bear with me with the weird indentation, it’s for didactical purposes. I will present an alternative later in this post.  
 2 — The flatMap method receives a Function. We’ll call this function the “__mapper__” function.  
+```
 
 어떻게 value의 present, empty 여부를 체크하지 않아도 됐는지 알아야 한다. Optional모나드는 flatMap 메소드를 통해서 적절하게 감싸진 내부 파라미터를 꺼내준다. 첫 째의 Optional이 empty일 경우에는 두 번 째 Optional의 flatMap을 실행하지 않는다. 사실, Optional 조합 연산(composition) 안에 하나의 empty라도 있으면 결과는 empty Optional이다.  
 
