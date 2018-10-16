@@ -34,7 +34,7 @@ public class Main {
     }
 
 }
-```  
+```
 
 위 코드 처럼 `"a"`를 포함 여부에 따라서 true or false를 주는 `compute`메소드가 있고, `eagerMatch` 메소드를 만들어 실행을 해보겠습니다.  
 
@@ -79,7 +79,7 @@ public static void main(String [] args) {
 ```
 executing...
 incompatible!
-```  
+```
 결과는 예상한대로 executing이 한 번 만 실행됐습니다! 즉 compute("aa")에 대한 평가가 결과를 주는 대 필요하지 않았다는 걸 알 수 있습니다.  
 
 위와 같이 자바에서도 Lazy evaluation적용할 수 있게 되었습니다.  
@@ -91,7 +91,7 @@ for (int i = 0; i < 20; i++) {
     int n = i * 3; System.out.println(n);
     if (n == 30) return;
 }
-```  
+```
 
 예를 들어 이와 같은 포문을 굉장히 많이 쓰고 있죠, 이걸 스트림으로 바꾸면 아래와 같을 겁니다.  
 
@@ -101,7 +101,7 @@ IntStream.range(0, 20)
   .peek(n2 -> System.out.println(n2))
   .filter(nn -> nn == 30)
   .findFirst().getAsInt();
-```  
+```
 
 직관적으로 생각해 봤을 때는 map을 하기 때문에 0 -> 57까지 프린팅이 다 된 후에 filter를 적용할 것으로 생각되지만 사실 그렇지 않습니다.(굉장히 놀랍습니다)   
 
@@ -117,7 +117,7 @@ IntStream.range(0, 20)
 24
 27
 30
-```  
+```
 
 스트림이라고 하면 그냥 함수형 처럼 사용할 수 있도록 만들어 준 API에 그치는 줄 알았는데, 저러한 부분까지 고려가 되어있었습니다. 실은 함수형 패러다임에서 Lazy evaluation은 굉장히 중요한 요소인데, 그 것을 구현한 것이라고 생각하면 되겠습니다. 스칼라에서도 같은 목적으로 스트림이 있습니다.  
 
